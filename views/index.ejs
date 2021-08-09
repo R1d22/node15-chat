@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/uniqolor/dist/uniqolor.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    
+    <h1>Chat</h1>
+    <div class="login show">
+      <form name="login">
+        <input type="text" require placeholder="Введите имя" name="name">
+        <button type="submit">Войти в чат</button>
+      </form>
+    </div>
+
+    <div class="chatbox">
+      <div class="messages"></div>
+      <div class="sysMessage hidden"></div>
+      <form name="chat">
+        <input type="text" class="text-area" require placeholder="Введите сообщение" name="message">
+        <button type="submit">Отправить сообщение</button>
+      </form>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

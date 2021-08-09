@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.show {
+  display: block;
+}
+.login:not(.show), .chatbox:not(.show) {
+  display: none
+}
+.messages {
+  border: 1px solid black;
+  height: 700px;
+  overflow-y: scroll
+}
+.sysMessage {
+  height: 40px;
+}
+.sysMessage.hidden {
+  display: none
+}
+
